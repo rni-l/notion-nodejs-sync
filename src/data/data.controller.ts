@@ -13,11 +13,11 @@ import { DataService } from './data.service';
 export class DataController {
   constructor(private readonly dataService: DataService) {}
 
-  @Get()
+  @Get('/sync')
   syncLatest() {
     return this.dataService.syncLatest();
   }
-  @Get()
+  @Get('/syncAll')
   syncAll() {
     return this.dataService.syncAll();
   }

@@ -39,8 +39,13 @@ pnpm run start
 
 # watch mode
 pnpm run start:dev
+
+# Synchronous
+curl http://localhost/data/sync
+
+# Incremental synchronization
+curl http://localhost/data/syncAll
+
+# Get all data
+curl http://localhost/data/all
 ```
-
-## License
-
-Nest is [MIT licensed](LICENSE).
